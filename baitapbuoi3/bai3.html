@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="text" id="MauNen" value="mau nen" /><br />
+    <input type="text" id="MauChu" value="mau chu" /><br />
+    <input type="text" id="TieuDe" value="tieu de" /><br />
+    <input type="text" id="TrangThai" value="trang thai" /><br />
+    <button onclick="ThayDoi()">thay doi</button>
+    <script type="text/javascript">
+        function ThayDoi(){
+            var mauNen = document.getElementById("MauNen").value;
+            var mauChu = document.getElementById("MauChu").value;
+            var tieuDe = document.getElementById("TieuDe").value;
+            var trangThai = document.getElementById("TrangThai").value;
+            document.body.style.backgroundColor = mauNen;
+            document.body.style.color = mauChu;
+            document.title = tieuDe;
+            window.status = trangThai;
+        }
+    </script>
+</body>
+</html>

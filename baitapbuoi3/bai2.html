@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" onclick="changeColor()" value="change color" />
+    <div id="1">1</div>
+    <div id="2">2</div>
+    <div id="3">3</div>
+    <div id="4">4</div>
+    <div id="5">5</div>
+    <div id="6">6</div>
+    <div id="7">7</div>
+    <div id="8">8</div>
+    <div id="9">9</div>
+    <div id="10">10</div>
+    <script type="text/javascript">
+        function changeColor(){
+            for (var i = 1; i <= 10; i++) {
+                var div = document.getElementById(i);
+                if (i % 2 == 0) {
+                    div.style.backgroundColor = "red";
+                }
+                else {
+                    div.style.backgroundColor = "blue";
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

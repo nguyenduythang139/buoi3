@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--<script language="Javascript">
+        document.write("Tạo Button và Text bằng Script</BR>");
+        document.write("</BR>");
+        document.write("<input type='button' id='welcome' value='Welcome' ");
+        document.write("onclick=Alert() > ");
+        document.write("<input type='text' id='msg' value='Welcome to'> ");
+        function Alert()
+        {
+            alert('Welcome to JavaScript');
+            document.getElementById('msg').value += " JavaScript";
+        }
+    </script>-->
+    <!-- <script language="Javascript">
+         var Ten = prompt("Bạn hãy nhập vào tên ", "");
+         var Tuoi = prompt("Bạn hãy nhập vào Tuổi : ");
+         document.write("Chào bạn :  " + Ten + "</br>");
+         document.write("Tuổi của bạn là: " + Tuoi);
+     </script>-->
+    <!--<h3>Giải phương trình: ax + b = 0</h3>
+    <p>
+        <input type="number" id="a" size="10"> x + <input type="number" id="b" size="10"> = 0
+    </p>
+    <p id="ketQua"></p>
+    <input type="button" onclick="GiaiPhuongTrinh()" value="Giải phương trình">
+    <script type="text/javascript">
+        function GiaiPhuongTrinh() {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            if (a != 0) {
+                var x = -b / a;
+                document.getElementById('ketQua').innerText = "Phương trình có nghiệm x = " + x;
+            }
+            else if (b == 0) {
+                document.getElementById('ketQua').innerText = "Phương trình có vô số nghiệm.";
+            }
+            else {
+                document.getElementById('ketQua').innerText = "Phương trình vô nghiệm.";
+            }
+        }
+    </script>-->
+    <input type="text" id="numberbyuser" placeholder="nhap so bat ki" value=""/><br />
+    <button onclick="InSo()">in so</button>
+    <p id="kq"></p>
+    <script type="text/javascript">
+        function InSo(){
+            var number = document.getElementById("numberbyuser").value;
+            var result = "";
+            for (var i = 1; i <= number; i++) {
+                result += i + " ";
+            }
+            document.getElementById("kq").textContent = result;
+        }
+    </script>
+</body>
+</html>

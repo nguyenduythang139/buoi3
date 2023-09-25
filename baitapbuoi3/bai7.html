@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        #container {
+            width: 800px;
+            height: 800px;
+            position: relative;
+            background: url('https://shopdunk.com/images/thumbs/0019818_iphone-15-256gb_550.jpeg');
+            background-repeat:no-repeat;
+           /* background-position-x:center;*/
+           /* background-position-y:center;*/
+            background-size: cover;
+        }
+
+        .square {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+        }
+
+        .square1 {
+            background-color: yellow;
+            top: 0;
+            left: 0;
+        }
+
+        .square2 {
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+
+        .square3 {
+            background-color: red;
+            bottom: 0;
+            left: 0;
+        }
+
+        .square4 {
+            background-color: blue;
+            bottom: 0;
+            right: 0;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+    <div id="container">
+        <div class="square square1"></div>
+        <div class="square square2"></div>
+        <div class="square square3"></div>
+        <div class="square square4"></div>
+    </div>
+
+    <script>
+        var squares = document.getElementsByClassName('square');
+
+        for (var i = 0; i < squares.length; i++) {
+            squares[i].addEventListener('click', function () {
+                this.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
